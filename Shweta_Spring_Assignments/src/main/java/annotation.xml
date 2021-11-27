@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean class="springAnnotationExample2.Student" name= "studentA">
+      <property name = "age" value="23"/>
+      <property name = "name" value="Shuaib"/>
+</bean>
+
+<bean id="student" class="springAnnotationExample2.Student1">
+
+  <property name="age" value="23" />
+  <property name="name" value="Shweta" />
+
+
+ </bean>
+
+ <bean id="address" class="springAnnotationExample2.Address">
+
+  <property name="street" value="ROAD" />
+  <property name="city" value="MAHABLESHWAR" />
+  <property name="state" value="MAHARASHTRA"></property>
+ </bean>
+
+</beans>
